@@ -12,8 +12,20 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: xy5ehwm8g9b
+    name: image_to_image_api.json
+    file: basic_workflows/image_to_image_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: 3g19dqofgn4
     name: text_to_image.json
     file: basic_workflows/text_to_image.json
     version: .nan
+  - id: h4dks5g9maw
+    name: image_to_image.json
+    file: basic_workflows/image_to_image.json
+    version: 0
