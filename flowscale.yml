@@ -20,6 +20,14 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: uln54v5updr
+    name: lora_workflow_api.json
+    file: basic_workflows/lora_workflow_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: 3g19dqofgn4
     name: text_to_image.json
@@ -28,4 +36,8 @@ normal_workflows:
   - id: h4dks5g9maw
     name: image_to_image.json
     file: basic_workflows/image_to_image.json
+    version: 0
+  - id: g2ym4div1th
+    name: lora_workflow.json
+    file: basic_workflows/lora_workflow.json
     version: 0
