@@ -3,5 +3,17 @@ models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
-workflows: []
-normal_workflows: []
+workflows:
+  - id: ipypdze2c8
+    name: text_to_image_api.json
+    file: basic_workflows/text_to_image_api.json
+    version: .nan
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+normal_workflows:
+  - id: 3g19dqofgn4
+    name: text_to_image.json
+    file: basic_workflows/text_to_image.json
+    version: .nan
