@@ -51,7 +51,10 @@
     },
     "6": {
         "inputs": {
-            "text": "Photograph of Sean Connery as James Bond, elegant spy suit, well-dressed, Goldfinger era.\n",
+            "text": [
+                "12",
+                0
+            ],
             "clip": [
                 "11",
                 1
@@ -91,19 +94,6 @@
             "title": "VAE Decode"
         }
     },
-    "9": {
-        "inputs": {
-            "filename_prefix": "ComfyUI",
-            "images": [
-                "8",
-                0
-            ]
-        },
-        "class_type": "SaveImage",
-        "_meta": {
-            "title": "Save Image"
-        }
-    },
     "11": {
         "inputs": {
             "lora_name": "IGInfluencer_V1.safetensors",
@@ -121,6 +111,45 @@
         "class_type": "LoraLoader",
         "_meta": {
             "title": "Load LoRA"
+        }
+    },
+    "12": {
+        "inputs": {
+            "default_value": "",
+            "label": "Positive Prompt"
+        },
+        "class_type": "FSLoadText",
+        "_meta": {
+            "title": "[FS]⚡Load Text (Input)"
+        }
+    },
+    "13": {
+        "inputs": {
+            "filename_prefix": "FlowScale",
+            "format": "png",
+            "label": "Output Image",
+            "quality": 95,
+            "lossless": false,
+            "images": [
+                "8",
+                0
+            ]
+        },
+        "class_type": "FSSaveImage",
+        "_meta": {
+            "title": "[FS]⚡Save Image (Output)"
+        }
+    },
+    "14": {
+        "inputs": {
+            "images": [
+                "8",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
         }
     }
 }
