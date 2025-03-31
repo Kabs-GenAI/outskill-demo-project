@@ -45,6 +45,18 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: dlx6vs9yc9
+    name: image_to_image.json
+    description: ''
+    file: basic_workflows/image_to_image.json
+  - id: c0h3hdr4ux
+    name: lora_workflow.json
+    description: ''
+    file: basic_workflows/lora_workflow.json
+  - id: 150ot1xaq1d
+    name: text_to_image.json
+    description: ''
+    file: basic_workflows/text_to_image.json
 normal_workflows:
   - id: 3g19dqofgn4
     name: text_to_image.json
