@@ -7,11 +7,28 @@ workflows:
   - id: ipypdze2c8
     name: text_to_image_api.json
     file: basic_workflows/text_to_image_api.json
-    version: .nan
+    version: 0
     description: ''
-    inputs: []
-    outputs: []
+    inputs:
+      - path: 12.inputs.default_value
+        label: Positive Prompt
+        parameter_name: default_value_89463
+        type: string
+        demo_type: text
+        category: input
+        randomize: false
+      - path: 13.inputs.filename_prefix
+        label: filename_prefix
+        parameter_name: filename_prefix_43797
+        type: string
+        demo_type: text
+        category: output
+        randomize: true
+    outputs:
+      - label: Output Image
+        demo_type: image
     skip_preprocess: true
+    advancedConfig: false
   - id: xy5ehwm8g9b
     name: image_to_image_api.json
     file: basic_workflows/image_to_image_api.json
@@ -32,7 +49,7 @@ normal_workflows:
   - id: 3g19dqofgn4
     name: text_to_image.json
     file: basic_workflows/text_to_image.json
-    version: .nan
+    version: 0
   - id: h4dks5g9maw
     name: image_to_image.json
     file: basic_workflows/image_to_image.json
